@@ -1,0 +1,97 @@
+* {
+  font-family: "Special Elite", system-ui;
+  font-weight: 100;
+  font-style: normal;
+}
+
+h1,
+h2 {
+  font-weight: 900;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(103, 170, 87);
+}
+
+.header {
+  background-color: rgb(253, 245, 208);
+  color: white;
+  background-image: url(https://images.unsplash.com/photo-1483982258113-b72862e6cff6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: 100% auto;
+  padding: 20px;
+  border-bottom: 5px solid rgb(215, 243, 138);
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(215, 243, 138);
+  border-radius: 2vw;
+  width: 20vw;
+  height: 20vw;
+  margin: 1.5vw;
+  padding: 10px;
+  box-shadow: 7px 7px rgb(0, 0, 0), 6px 6px rgb(215, 243, 138);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    grid-template-columns: auto;
+  }
+
+  .panel {
+    width: 90vw;
+    height: 90vw;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .container {
+    grid-template-columns: auto auto;
+  }
+
+  .panel {
+    height: 40vw;
+    width: 40vw;
+  }
+}
+
+
+
+.panel img {
+  height: 100px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-inline: auto;
+}
+
+.panel p {
+  overflow: hidden;
+  margin: 5px;
+}
+
+.panel a {
+  color: black;
+  text-decoration: none;
+  margin-inline: auto;
+  margin-block: 0;
+  padding: 12px 8px 8px 12px;
+  background-color: rgb(103, 170, 87);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(77, 76, 76) inset;
+}
