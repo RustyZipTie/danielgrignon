@@ -95,3 +95,7 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgb(77, 76, 76) inset;
 }
+
+.panel iframe {
+  height: 1000px;
+}
